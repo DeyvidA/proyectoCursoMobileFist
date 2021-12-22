@@ -145,16 +145,26 @@ main{
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 5px;
     font-family: "Inter", sans-serif;
+}
+.main-tables-container{
+    display: flex;
+    height: 360px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+
 }
 .main-currency-table .currency-table--title,
 .main-comision-table .comision-table--title{
+    
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
+
 }
 .main-comision-table .comision-table--title{
     color: var(--secondary-blue);
